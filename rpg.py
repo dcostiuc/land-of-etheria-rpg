@@ -1149,6 +1149,8 @@ spikedPelt = Armor("Spiked Pelt", 2, 4, 0)
 
 
 #CRIMSON COMMUNIST Items
+#Not meant to be rude or insulting, not meant to offend anyone
+#Just thought that it would be an interesting NPC idea
 global crimFlag, goldHammer, goldSickle, redNation, potFury
 crimFlag = Item("Crimson Flag", 2)
 goldHammer = Weapon("Golden Hammer", 7, 14, 0)
