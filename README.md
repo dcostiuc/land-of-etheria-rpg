@@ -1,2 +1,2 @@
 # land-of-etheria-rpg
-A work-in-progress Python 3 RPG game.
+An early attempt at a text-based Python 3 RPG game practicing Object-Oriented Principles learned in high school.
