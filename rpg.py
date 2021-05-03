@@ -590,26 +590,8 @@ class CreatureDepths(Enemy):
         self.upperGold = 8
         self.lvl = random.randint(1, player1.lvl)
 
-
-
-class CrimsonCommunist(Enemy):
-    def __init__(self):
-        self.name = "Crimson Communist"
-        self.hp = random.randint(1,20) + random.randint(0, player1.lvl)
-        self.maxHp = self.hp
-        xpMax = 10 + random.randint(0, player1.lvl)
-        self.xp = random.randint(1, xpMax)
-        self.dmg = 10
-        self.lowest = 5
-
-        self.items = [crimFlag, goldHammer, goldSickle, redNation, potFury]
-        self.loot = self.possibleLoot()
-        self.inv = self.createDropped()
-
-        self.upperGold = 20
-        self.lvl = random.randint(1, player1.lvl) + 10
-
-
+        
+        
 class NPC:
     def __init__(self, name):
         self.name = name
@@ -858,7 +840,6 @@ class Game:
 
             self.eventOccured = self.area.events(self.eventOccured)
             self.randMerchEvent()
-            self.crimsonEvent()
 
             sleep(0.5)
             print("\nWhat would you like to do?")
@@ -907,46 +888,6 @@ class Game:
             if choice == '1':
                 merchant.showStock()
                 merchant.options(self.player)
-
-    def crimsonEncounter(self):
-        goals = [crimFlag, goldHammer, goldSickle, redNation]
-        communist = CrimsonCommunist()
-
-        print("\n%s encountered the %s!" %(self.player.name, communist.name))
-        sleep(0.5)
-        choice = 0
-        print("\n   CC: Hello my comrade. I need to see some patriotism \n       before you may journey onwards.")
-        sleep(3)
-        choice = input("\n[1]Fight \n[2]Give Item \nEnter Choice: ")
-        if choice == '2':
-            self.player.checkInventory()
-
-            itemName = input("\n   CC: What would you like to give me? ")
-            try:
-                item = self.player.itemSearch(itemName)
-
-                if item in goals:
-                    sleep(1)
-                    print("\n   CC: You may proceed.")
-                    sleep(1)
-                else:
-                    sleep(1)
-                    print("\n   CC: What is this garbage? You are not a true comrade!")
-                    sleep(2.5)
-                    choice = 1
-            except (ValueError, AttributeError):
-                #print("Uh oh! I don't think you have that item!")
-                pass
-        if choice != '2':
-            specialBattle = Battle(self.player, communist)
-            self.engageBattle(specialBattle)
-
-    def crimsonEvent(self):
-        if self.eventOccured == False:
-            num = random.randint(1,10)
-            if num == 1:
-                self.eventOccured = True
-                self.crimsonEncounter()
 
     def randMerchEvent(self):
         if self.eventOccured == False:
@@ -1147,16 +1088,7 @@ skull = Item("Fiendish Skull", 1)
 slayerBeast = Weapon("Slayer of the Beast", 3, 7, 1)
 spikedPelt = Armor("Spiked Pelt", 2, 4, 0)
 
-
-#CRIMSON COMMUNIST Items
-#Not meant to be rude or insulting, not meant to offend anyone
-#Just thought that it would be an interesting NPC idea
-global crimFlag, goldHammer, goldSickle, redNation, potFury
-crimFlag = Item("Crimson Flag", 2)
-goldHammer = Weapon("Golden Hammer", 7, 14, 0)
-goldSickle = Weapon("Golden Sickle", 7, 15, 0)
-redNation = Armor("The Red Nation", 6, 12, 0)
-
+# Miscellaneous Items
 furyDesc = "The player’s next 3 attacks will deal x2 Damage."
 furyEffect = Effect("Growing Rage", furyDesc, 4, 2, 'player')
 furyEffect.effectActivator = "dmginc"
