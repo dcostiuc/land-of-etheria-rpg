@@ -1,4 +1,4 @@
-# land-of-etheria-rpg
+# The Land of Etheria
 An early attempt at a text-based Python 3 RPG game practicing `Object-Oriented Principles` learned in high school.
 
 ### Things that weren't done at the time of development that should be:
