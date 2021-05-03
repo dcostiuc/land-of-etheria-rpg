@@ -1,5 +1,5 @@
 import random
-from time import *
+from time import sleep
 
 class Battle:
     def __init__(self, player, enemy):
