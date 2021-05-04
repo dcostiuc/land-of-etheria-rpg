@@ -22,4 +22,4 @@ being implemented in `C++` and the `SFML` library._
 * Code modularization (splitting out game code into logical folders & files)
 * Better documentation
 * Trying out some design patterns
-* Better managmenent of in-game entities/items
+* Better management of in-game entities/items
