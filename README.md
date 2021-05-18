@@ -15,7 +15,7 @@ also practicing object-oriented principles learned in high school.
 * A `Rarity` system
 * An `Effects` system
 
-### Things that weren't done at the time of development that should be:
+### Things that weren't done at the time of development that should've been:
 * Code modularization (splitting out game code into logical folders & files)
 * Better documentation
 * Trying out some design patterns
