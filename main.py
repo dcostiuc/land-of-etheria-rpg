@@ -1,6 +1,3 @@
-import random
-from time import sleep
-
 from managers.game import Game
 import entities.globals
 
