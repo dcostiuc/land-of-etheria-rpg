@@ -17,7 +17,7 @@ also practicing object-oriented principles learned in high school.
 - A `Rarity` system
 - An `Effects` system
 
-### Things that weren't done at the time of development that should've been:
+### Tech Debt:
 
 - Better documentation
 - Trying out some design patterns
