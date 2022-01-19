@@ -1,4 +1,4 @@
-# The Land of Etheria
+# ⚔ The Land of Etheria
 
 An early passion project heavily inspired by games such as AdventureQuest.
 
@@ -17,9 +17,15 @@ also practicing object-oriented principles learned in high school.
 - A `Rarity` system
 - An `Effects` system
 
-### Tech Debt:
+## To Run
+Simply clone or download this repo and run the `main.py` file, assuming you have some version of Python 3 installed (e.g. Python 3.6+).
+
+
+## Tech Debt
 
 - Better documentation
 - Trying out some design patterns
 - Better management of in-game entities/items
 - General refactoring
+
+
