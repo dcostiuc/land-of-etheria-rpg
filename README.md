@@ -18,7 +18,7 @@ also practicing object-oriented principles learned in high school.
 - An `Effects` system
 
 ## To Run
-Simply clone or download this repo and run the `main.py` file, assuming you have some version of Python 3 installed (e.g. Python 3.6+).
+Simply clone or download this repo and run the `main.py` file, assuming you have some version of [Python 3](https://www.python.org/downloads/) installed (e.g. Python 3.6+).
 
 ## Screenshots
 Main Menu  
