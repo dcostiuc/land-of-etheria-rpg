@@ -20,6 +20,17 @@ also practicing object-oriented principles learned in high school.
 ## To Run
 Simply clone or download this repo and run the `main.py` file, assuming you have some version of Python 3 installed (e.g. Python 3.6+).
 
+## Screenshots
+Main Menu  
+![Main Menu](https://github.com/dcostiuc/land-of-etheria-rpg/blob/master/main_menu.png)   
+
+Sample Battle  
+![Sample Battle](https://github.com/dcostiuc/land-of-etheria-rpg/blob/master/sample_battle.png)   
+
+Some Options  
+![Some Options](https://github.com/dcostiuc/land-of-etheria-rpg/blob/master/some_options.png)   
+
+and much more!  
 
 ## Tech Debt
 
